@@ -2,15 +2,15 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: Yuxuan Wang # the website title (if blank, full name will be used instead)
+title: Yuxuan Wang 
 email: yuxuan.wang2@upc.edu
-# 你的基本信息 (这决定了网站头部显示的内容)
+
 
 description: > 
   Structure in Physics, Emotion in Music.
   Computational Physicist | Titre d'Ingénieur | High-Frequency Data & Simulation.
 
-# 社交链接 (填上你刚刚优化的那些)
+
 github_username: YuxuanWang-tech
 linkedin_username: yuxuan-wang-1129abcd
 contact_note: >
@@ -25,8 +25,8 @@ keywords: jekyll, jekyll-theme, academic-website, portfolio-website # add your o
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: ⚛️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
-url: "https://YuxuanWang-tech.github.io"
-baseurl: ""  # 这里必须是空的双引号！千万不要写东西
+url: https://YuxuanWang-tech.github.io
+baseurl: ""  
 #url: https://alshedivat.github.io # the base hostname & protocol for your site
 #baseurl: /al-folio # the subpath of your site, e.g. /blog/. Leave blank for root
 last_updated: false # set to true if you want to display last updated in the footer
