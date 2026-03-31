@@ -2,10 +2,16 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: blank # the website title (if blank, full name will be used instead)
-first_name: You
-middle_name: R.
-last_name: Name
+title: Yuxuan Wang # the website title (if blank, full name will be used instead)
+email: yuxuan.wang2@upc.edu
+# 你的基本信息 (这决定了网站头部显示的内容)
+
+description: > Structure in Physics, Emotion in Music.   # 你的 Slogan，要充满极客感
+  Computational Physicist | Titre d'Ingénieur | High-Frequency Data & Simulation.
+
+# 社交链接 (填上你刚刚优化的那些)
+github_username: YuxuanWang-tech
+linkedin_username: yuxuan-wang-1129abcd
 contact_note: >
   You can even add a little note about which of these is the best way to reach you.
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
