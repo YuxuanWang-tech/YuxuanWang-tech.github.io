@@ -1,25 +1,21 @@
 ---
 layout: page
-title: project 2
-description: a project with a background image and giscus comments
+title: High-Frequency Signal Processing
+description: Optimizing FRB searching algorithms at the Chinese Academy of Sciences.
 img: assets/img/3.jpg
 importance: 2
 category: work
 giscus_comments: true
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+During my research at the **National Time Service Center (CAS)**, I worked on the detection of Fast Radio Bursts (FRB).
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+### Key Technical Highlights:
+* **Deep Learning:** Implemented **PyTorch/TensorFlow** models to accelerate the sifting of rare candidate signals from petabytes of noisy data.
+* **Pipelines:** Deployed Linux-based high-frequency pipelines to mitigate RFI and improve Signal-to-Noise Ratio (SNR).
+* **Collaborative Scale:** Processed data from the 40-meter radio telescope, managing the full lifecycle from raw observation to candidate verification.
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
