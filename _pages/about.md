@@ -27,11 +27,14 @@ latest_posts:
 ---
 ## Biography
 
-I am a **Computational Physics Ph.D. candidate** at Universitat Politècnica de Catalunya (UPC) and a **French-certified Engineer** (Titre d'Ingénieur) from Ecole Centrale de Lille. 
+I am a **Computational and Applied Physics Ph.D. candidate** at the Universitat Politècnica de Catalunya (UPC) in Barcelona, driven by a deep fascination with modeling extreme and rare physical phenomena. My academic journey is highly cross-disciplinary and international. Prior to my doctoral studies, I earned a Master’s in Electronic & Information Engineering from Xi'an Jiao Tong University (a C9 League institution in China), and was awarded the prestigious *Titre d'Ingénieur* (Master of Engineering) from Ecole Centrale de Lille in France, a highly selective program emphasizing rigorous mathematics, probability, and complex system design.
 
-My research lies at the intersection of **High-Performance Computing (HPC), High-Frequency Signal Processing, and Stochastic Modeling**. I specialize in translating complex non-linear physical phenomena (such as Helium Novae and Fast Radio Bursts) into robust numerical algorithms and automated data pipelines. 
+Currently, my doctoral research focuses on the hydrodynamic simulation and predictive modeling of rare astronomical transients, specifically **Helium Novae**. By deploying the implicit hydrodynamic solver **SHIVA** and architecting robust **Python** data pipelines, I compute solutions for coupled, non-linear partial differential equations (PDEs) under extreme density and temperature regimes. My core objective is to map the transition boundaries between stable burning states and full thermonuclear detonations—a challenge mathematically analogous to predicting regime-switching in highly stochastic systems. 
 
-* *"Structure in Physics, Emotion in Music."** This philosophy drives my pursuit of analytical rigor in the lab and creative expression through musical composition.
+Before diving into stellar hydrodynamics, I served as an Algorithm Researcher at the **National Time Service Center, Chinese Academy of Sciences (CAS)**. There, I dealt with petabytes of high-frequency time-series data from the 40-meter radio telescope. I developed and implemented deep learning models using **PyTorch and TensorFlow** to optimize Fast Radio Burst (FRB) searching algorithms. This experience honed my ability to extract extremely rare, low signal-to-noise ratio (SNR) signals from overwhelming background noise—a skill set directly transferable to extracting alpha from financial market data.
+
+Beyond the computational rigor of HPC clusters and machine learning models, I am a strong believer in the synergy of logic and creativity. **"Structure in Physics, Emotion in Music."** During my university years, I served as the Art Director of the Student Art Troupe and the Secretary of the Chinese Culture Club in France, leading diverse teams and fostering cross-cultural collaborations. I thrive in dynamic, collaborative environments where complex analytical ideas must be clearly communicated to diverse audiences.
+
 
 ## Research Interests
 * **Numerical Simulations:** Hydrodynamics, Transients, Coupled PDEs (SHIVA Code).
