@@ -1,25 +1,48 @@
 ---
 layout: page
-title: project 8
-description: an other project with a background image and giscus comments
-img: assets/img/9.jpg
-importance: 2
-category: work
+title: Beyond the Code
+description: Structure in Physics, Emotion in Music.
+img: assets/img/9.jpg # 建议放一张你弹琴、跳舞或在舞台上的高质感照片
+importance: 3
+category: Extracurricular # 这个分类会自动在 Projects 页面单开一个版块
 giscus_comments: true
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+While my academic life is driven by rigorous mathematical structures and high-performance computing, my personal life is deeply rooted in artistic expression and community building. I firmly believe that the creativity required to compose a melody or choreograph a performance is the exact same creativity needed to solve a complex non-linear physics problem.
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+**"Structure in Physics, Emotion in Music."** This philosophy shapes my approach to both science and life.
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+---
+
+### 🎭 Stage & Art Direction
+During my time at Xi'an Jiao Tong University, I was deeply involved in the performing arts.
+* **Art Director & Deputy Leader:** I served as the Art Director and Deputy Leader of the Student Art Troupe. In this role, I managed and coordinated large-scale, university-level activities, including orientation and graduation ceremonies.
+* **Fitness Dance Association:** Driven by a passion for movement and team coordination, I served as Minister of the Fitness Dance Association (ADA). I actively collaborated with the University Athletic Department to establish this new club, organizing classes and competitions to enrich student life.
+
+These experiences taught me how to lead diverse teams, make high-pressure decisions, and translate a creative vision into a flawlessly executed event.
+
+---
+
+### 🌍 Cross-Cultural Leadership
+My engineering studies in France (Ecole Centrale de Lille) offered a unique opportunity to build bridges between different cultures.
+* **Secretary of the Chinese Culture Club:** I took on the role of Secretary, where I actively promoted Chinese culture to French students through lectures and evening events.
+* **Community Integration:** I focused on fostering communication and helping international students seamlessly integrate into the broader academic collective. 
+
+Working across linguistic and cultural boundaries has profoundly shaped my communication skills, a trait I consider essential for collaborating in global, fast-paced environments.
+
+---
+
+### 🎵 Musical & Creative Showcase
+*(Note: I compose and arrange music in my free time. Here are some of my creative projects.)*
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" title="Music Performance" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</div>
+
+> "Whether debugging a Python pipeline or harmonizing a chord progression, it's all about finding the underlying pattern."
+
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
