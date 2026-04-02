@@ -4,7 +4,7 @@ title: High-Frequency Signal Processing
 description: Optimizing FRB searching algorithms at the Chinese Academy of Sciences.
 img: assets/img/3.jpg
 importance: 2
-category: work
+category: Work
 giscus_comments: true
 ---
 

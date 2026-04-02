@@ -4,7 +4,7 @@ title: Rare Transients
 description: Hydrodynamic simulation of Helium Novae using SHIVA and Python.
 img: assets/img/12.jpg # 建议上传一张绚丽的模拟图
 importance: 1
-category: work
+category: Work
 related_publications: true
 ---
 
