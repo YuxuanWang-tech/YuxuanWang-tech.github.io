@@ -461,9 +461,9 @@ ninja.data = [{
           description: "Optimizing FRB searching algorithms at the Chinese Academy of Sciences.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_project/";
-            },},{id: "projects-project-3-with-very-long-name",
-          title: 'project 3 with very long name',
-          description: "a project that redirects to another website",
+            },},{id: "projects-project-3-chasing-the-chandrasekhar-limit-overcoming-numerical-collapses-in-mesa",
+          title: 'Project 3: Chasing the Chandrasekhar Limit — Overcoming Numerical Collapses in MESA',
+          description: "A technical deep dive into generating extreme-mass White Dwarfs (1.35 M_sun) for Helium Nova simulations, balancing mathematical solvers with fundamental physics.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/3_project/";
             },},{id: "projects-project-4",
