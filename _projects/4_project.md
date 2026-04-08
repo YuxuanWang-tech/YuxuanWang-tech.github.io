@@ -51,7 +51,7 @@ A key takeaway from this stage is the limitation of 1D hydrostatic codes like ME
 ## 5. Visualizing the Evolution
 *Below is a placeholder for the Python-generated plot (nova_analysis_81k.png) showing the luminosity plateau and temperature rise.*
 
-![Nova Evolution Plot](your_image_path/nova_analysis_81k.png)
+![Nova Evolution Plot](/assets/img/11.jpg)
 
 ---
 
