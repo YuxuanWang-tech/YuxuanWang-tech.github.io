@@ -1,80 +1,68 @@
 ---
 layout: page
-title: project 4
+title: Numerical Simulations of He-Accretion on 1.25 Msun ONe WDs
 description: another without an image
 img:
 importance: 3
-category: Extracurricular
+category: Work
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+## 1. Project Overview
+This project investigates the long-term evolution and nucleosynthetic yields of **Helium Novae**. Using the **MESA (v.r23.05.1)** code, we simulate a $1.25 M_{\odot}$ Oxygen-Neon White Dwarf accreting helium at a constant rate of $\dot{M} = 10^{-7} M_{\odot}/\text{yr}$.
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+The core objective is to identify **isotopic fingerprints** (such as $^{12}\text{C}/^{13}\text{C}$ and $^{14}\text{N}/^{15}\text{N}$) that distinguish helium-burning novae from classical hydrogen-burning novae.
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+---
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
+## 2. Experimental Setup & Technical Details
+### Model Configuration
+- **Core Model:** `o_ne_wd.mod` (1.25 Solar Masses)
+- **Nuclear Network:** `approx21.net` (Tracing $\alpha$-chain and CNO isotopes)
+- **Accretion Species:** Pure $^4\text{He}$ ($Y=1.0$)
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
+### Numerical Strategies (Overcoming the 81,640 "Wall")
+During the simulation, the model encountered severe convergence issues at the onset of Thermonuclear Runaway (TNR). To bridge the gap between quasi-static accretion and dynamic eruption, the following numerical "surgery" was performed:
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
+| Parameter | Baseline Value | Adjusted Value | Purpose |
+| :--- | :--- | :--- | :--- |
+| `varcontrol_target` | $10^{-4}$ | $10^{-3}$ | Relaxing solver tolerance to avoid infinite retries during peak flash. |
+| `mesh_delta_coeff` | $0.5$ | $1.5$ | Coarsening the grid to handle the rapidly expanding envelope ($R \approx 1.3 R_{\odot}$). |
+| `max_num_photos` | $10$ | $200$ | Increasing backup frequency to prevent data loss from system crashes. |
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+---
 
-{% raw %}
+## 3. Preliminary Results
+### Quasi-Steady Burning Phase
+At Step $\sim 77,000$, the WD reached a critical stability point:
+- **Nuclear Luminosity:** $\log(L_{\text{nuc}}/L_{\odot}) \approx 5.27$
+- **Peak Temperature:** $\log(T_{\text{max}}/\text{K}) \approx 8.91$ (Over 800 million K)
+- **Envelope Radius:** Expanded from WD-scale to $\sim 1.3 R_{\odot}$.
 
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
+---
 
-{% endraw %}
+## 4. Discussion: MESA vs. SHIVA
+A key takeaway from this stage is the limitation of 1D hydrostatic codes like MESA in the late stages of TNR. 
+- **MESA:** Excellent for the 13-million-year accretion history.
+- **SHIVA:** More robust for the explosive hydrodynamic phase (shocks and mass ejection).
+
+**Future Work:** We plan to use the MESA profile at $L_{\text{nuc}}$ peak as a "hand-off" model for **SHIVA** to obtain high-fidelity nucleosynthetic yields.
+
+---
+
+## 5. Visualizing the Evolution
+*Below is a placeholder for the Python-generated plot (nova_analysis_81k.png) showing the luminosity plateau and temperature rise.*
+
+![Nova Evolution Plot](your_image_path/nova_analysis_81k.png)
+
+---
+
+## 6. How to Run
+To reproduce the pre-flash state:
+1. Load `inlist_project`.
+2. Ensure `history_columns.list` has `add_average_abundances` enabled.
+3. Run `./re x600` (or your latest checkpoint).
+
+```bash
+# Example restart command
+export OMP_NUM_THREADS=8
+./re x600
