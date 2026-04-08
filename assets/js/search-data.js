@@ -468,7 +468,7 @@ ninja.data = [{
               window.location.href = "/projects/3_project/";
             },},{id: "projects-numerical-simulations-of-he-accretion-on-1-25-msun-one-wds",
           title: 'Numerical Simulations of He-Accretion on 1.25 Msun ONe WDs',
-          description: "another without an image",
+          description: "This project investigates the long-term evolution and nucleosynthetic yields of **Helium Novae**. Using the **MESA (v.r23.05.1)** code, we simulate a $1.25 M_{\odot}$ Oxygen-Neon White Dwarf accreting helium at a constant rate of $\dot{M} = 10^{-7} M_{\odot}/\text{yr}$.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/4_project/";
             },},{id: "projects-project-5",
