@@ -1,14 +1,13 @@
 ---
 layout: page
 title: Numerical Simulations of He-Accretion on 1.25 Msun ONe WDs
-description: another without an image
-img:
+description: This project investigates the long-term evolution and nucleosynthetic yields of **Helium Novae**. Using the **MESA (v.r23.05.1)** code, we simulate a $1.25 M_{\odot}$ Oxygen-Neon White Dwarf accreting helium at a constant rate of $\dot{M} = 10^{-7} M_{\odot}/\text{yr}$.
 importance: 3
 category: Work
+enable_mathjax: true
 ---
 
 ## 1. Project Overview
-This project investigates the long-term evolution and nucleosynthetic yields of **Helium Novae**. Using the **MESA (v.r23.05.1)** code, we simulate a $1.25 M_{\odot}$ Oxygen-Neon White Dwarf accreting helium at a constant rate of $\dot{M} = 10^{-7} M_{\odot}/\text{yr}$.
 
 The core objective is to identify **isotopic fingerprints** (such as $^{12}\text{C}/^{13}\text{C}$ and $^{14}\text{N}/^{15}\text{N}$) that distinguish helium-burning novae from classical hydrogen-burning novae.
 

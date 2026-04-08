@@ -181,6 +181,7 @@ collections:
 markdown: kramdown
 highlighter: rouge
 kramdown:
+  math_engine: mathjax
   input: GFM
   syntax_highlighter_opts:
     css_class: "highlight"
@@ -412,6 +413,7 @@ enable_bing_verification: false # enables bing site verification
 enable_cookie_consent: false # enables GDPR-compliant cookie consent dialog (https://github.com/orestbida/cookieconsent)
 enable_masonry: true # enables automatic project cards arrangement
 enable_math: true # enables math typesetting (uses MathJax)
+enable_mathjax: true
 enable_tooltips: false # enables automatic tooltip links generated for each section titles on pages and posts
 enable_darkmode: true # enables switching between light/dark modes
 enable_navbar_social: false # enables displaying social links in the navbar on the about page
